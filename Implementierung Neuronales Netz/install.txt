@@ -1,0 +1,4 @@
+install python 3
+install packages tensorflow, numpy, matplotlib
+https://www.tensorflow.org/install/install_windows 
+replace "<0x81>" with ue in train and test files
