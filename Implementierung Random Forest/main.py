@@ -32,8 +32,8 @@ def prepareDataSet(file):
     y = df.iloc[:, 1].values   
     return {'x': x, 'y': y}
 
-trainingData = prepareDataSet(TRAIN_DATA_CSV)
-testData = prepareDataSet(TEST_DATA_CSV)
+trainingData = prepareDataSet(TEST_DATA_CSV) #prepareDataSet(TRAIN_DATA_CSV)
+testData = prepareDataSet(TRAIN_DATA_CSV) #prepareDataSet(TEST_DATA_CSV)
 
 # scale values
 x_train = STANDARD_SCALER.fit_transform(trainingData['x'])
